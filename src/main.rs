@@ -4,7 +4,7 @@ use std::env;
 
 
 fn main() {
-//   let Args: Vec<String> = env::args().skip(1).collect();
+
   let op_1 = env::args().nth(1).expect("need 2 num");
   let symbol = env::args().nth(2).expect("mention the operation");
   let op_2 = env::args().nth(3).expect("need 2 num");
