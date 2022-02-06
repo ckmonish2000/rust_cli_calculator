@@ -1,8 +1,5 @@
 use std::env;
 
-
-
-
 fn main() {
 
   let op_1 = env::args().nth(1).expect("need 2 num");
