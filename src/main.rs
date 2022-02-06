@@ -14,7 +14,11 @@ fn main() {
 
   let val = match symbol.as_str() {
     "+"=> op_one+op_two,
-      _ => 0.0
+    "-"=> op_one-op_two,
+    "/"=> op_one/op_two,
+    "%"=> op_one%op_two,
+    "X" | "x" | "*"=> op_one*op_two,
+      _ => panic!("bro you have not passed a valid arg")
   };
 
   println!("{} {} {} = {}",op_one,symbol,op_two,val);
